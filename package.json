@@ -1,0 +1,35 @@
+{
+  "name": "real-estate-website",
+  "version": "1.0.0",
+  "description": "A modern real estate website for property listings, buying, and selling.",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev\" \"npm run client\"",
+    "server": "cd api && node server.js",
+    "client": "cd client && npm run dev",
+    "dev":"cd api && nodemon run server.js"
+  },
+  "keywords": [
+    "real",
+    "estate",
+    "property",
+    "rent",
+    "buy",
+    "sell",
+    "house",
+    "apartment"
+  ],
+  "author": "Ganesh Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
